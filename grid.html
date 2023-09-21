@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+  </head>
+  <style>
+    .judul {
+      text-align: center;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      /* mengatur jumlah kolom */
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .grid-item {
+      padding: 20px;
+      border: 1px solid black;
+      align-items: center;
+      display: flex;
+      /* untuk pengaturan layout dari suatu konten ynag ukurannya belum diketahui atau bernilai dinamis */
+    }
+    img {
+      width: 300px;
+    }
+    h3 {
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    button {
+      background-color: grey;
+      cursor: pointer;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      border-radius: 5px;
+      padding: 10px;
+      color: black;
+    }
+    button:hover{
+      background-color: antiquewhite;
+
+    }
+  </style>
+  <body>
+    <h1 class="judul">Makanan</h1>
+
+    <!-- Bakso -->
+    <section class="grid-container">
+      <div class="grid-item">
+        <img src="img/m1.jpg" alt="Bakso" />
+      </div>
+
+      <div class="grid-item">
+        <div>
+          <h3>Bakso</h3>
+          <p>
+            Sejarah bakso berasal dari cerita di masa Dinasti Ming (1368-1644),
+            Tiongkok (sekarang). Konon, seorang pemuda bernama Meng Bo ingin
+            memasakkan daging empuk dan lembut untuk sang ibu. Ia terinspirasi
+            dari kue mochi, camilan yang terbuat dari ketan yang ditumbuk agar
+            halus, sehingga makanan ini terasa lembut.
+          </p>
+          <a href="index1.html">
+            <button>Klik</button>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Bakso -->
+
+    <!-- Piscok -->
+    <section class="grid-container">
+      <div class="grid-item">
+        <div>
+          <h3>Piscok</h3>
+          <p>
+            Pisang cokelat atau kerap disingkat piscok, adalah kudapan manis
+            dari Indonesia yang terbuat dari irisan pisang dengan cokelat cair
+            atau susu kental manis ...
+          </p>
+          <a href=""></a>
+          <button>Klik</button>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <img src="img/makanan2.jpg" alt="Piscok" />
+      </div>
+    </section>
+    <!-- Akhir Piscok -->
+
+    <!-- Spageti -->
+    <section class="grid-container">
+      <div class="grid-item">
+        <img src="img/makanan3.jpg" alt="spageti" />
+      </div>
+
+      <div class="grid-item">
+        <div>
+          <h3>Spageti</h3>
+          <p>
+            Spageti (nama resmi: Spaghetti ; pengucapan bahasa Italia:
+            [spaˈɡetti]) adalah salah satu jenis pasta yang berbentuk panjang,
+            tipis, silindris, dan padat, yang jika diperhatikan menyerupai mie
+            pada umumnya.[1] Ini adalah makanan pokok dalam masakan Italia
+            tradisional. Karena berbentuk seperti mie, kebanyakan orang
+            menyebutnya mie dari Italia meskipun banyak varian pasta lainnya
+            yang berbentuk seperti mie.
+          </p>
+          <a href=""></a>
+          <button>Klik</button>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Spageti -->
+  </body>
+</html>
